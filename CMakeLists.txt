@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(STCTestTaslClient)
+project(STCTestTaskClient)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_AUTOMOC ON)
@@ -14,8 +14,8 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(STCTestTaslClient main.cpp)
-target_link_libraries(STCTestTaslClient
+add_executable(STCTestTaskClient main.cpp headers/main_window.h src/main_window.cpp)
+target_link_libraries(STCTestTaskClient
         Qt::Core
         Qt::Gui
         Qt::Widgets
